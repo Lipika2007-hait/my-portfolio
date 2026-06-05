@@ -1,7 +1,7 @@
 # Hi, I'm Lipika 👋
 🎓 B.Tech Computer Science Student
 
-# 🛠️ Skills:
+## 🛠️ Skills:
 C • C++ • Python • Java • HTML • CSS • PHP • SQL
 
 ## 🌱 Currently Learning
@@ -10,4 +10,4 @@ C • C++ • Python • Java • HTML • CSS • PHP • SQL
 ## ⚡ Tools
 💻 VS Code | 🐙 Git | 🚀 GitHub
 
-# 🎯 Interested in Web Development, Open Source, and Freelancing
+🎯 Interested in Web Development, Open Source, and Freelancing
