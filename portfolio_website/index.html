@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lipika | Portfolio</title>
+
+<style>
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:15px 8%;
+background:rgba(15,23,42,0.95);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+@media(max-width:768px){
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e1b4b,#0f172a);
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero{
+    max-width:800px;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:linear-gradient(45deg,#38bdf8,#8b5cf6);
+    margin:0 auto 25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:3rem;
+    font-weight:bold;
+}
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+	border:4px solid #38bdf8;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(45deg,#38bdf8,#8b5cf6);
+    padding:14px 28px;
+    border-radius:30px;
+    margin:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.3rem;
+    color:#38bdf8;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    color:#dbeafe;
+    font-size:1.1rem;
+}
+
+.skills{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    padding:15px 25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:scale(1.08);
+}
+
+.projects,
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card,
+.service{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover,
+.service:hover{
+    transform:translateY(-8px);
+}
+
+.card h3,
+.service h3{
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+    font-size:1.1rem;
+}
+
+.contact p{
+    margin:12px 0;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:rgba(0,0,0,0.3);
+    color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.title{
+    font-size:1.8rem;
+}
+
+.btn{
+    display:block;
+    width:220px;
+    margin:10px auto;
+}
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="logo">Lipika</div><ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+<header>
+    <div class="hero">
+<div class="profile">
+    <img src="Lipika1.jpeg" alt="Lipika">
+</div>
+        <h1>Hi, I'm <span>Lipika</span></h1>
+        <p>B.TECH CSE (AI & ML) Student • Learning Web Development • Aspiring Freelancer</p>
+
+        
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</header>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I'm a Computer Science student passionate about web development,
+            software engineering.
+            I work with HTML, CSS, PHP, SQL, C, C++.
+            My goal is to create professional websites and software solutions
+            and grow my freelancing career.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="title">Skills</h2>
+
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">PHP</div>
+        <div class="skill">SQL</div>
+        <div class="skill">C</div>
+        <div class="skill">C++</div>
+        <div class="skill">Git</div>
+        <div class="skill">GitHub</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal responsive portfolio website using HTML and CSS.</p>
+        </div>
+
+        <div class="card">
+            <h3>Student Management System</h3>
+            <p>Manage student records with database integration.</p>
+        </div>
+
+        <div class="card">
+            <h3>To-Do Application</h3>
+            <p>Task management application with simple UI.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="title">Services</h2>
+
+    <div class="services">
+
+        <div class="service">
+            <h3>Website Design</h3>
+            <p>Modern and responsive websites.</p>
+        </div>
+
+        <div class="service">
+            <h3>Frontend Development</h3>
+            <p>HTML, CSS and responsive layouts.</p>
+        </div>
+
+        <div class="service">
+            <h3>PHP Development</h3>
+            <p>Dynamic websites and backend logic.</p>
+        </div>
+
+        <div class="service">
+            <h3>Bug Fixing</h3>
+            <p>Fix website and coding issues.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact">
+        <p><strong>📧 Gmail:</strong> lipikahait888@gmail.com</p>
+		
+        <p>
+		    <strong>💻 GitHub:</strong>
+                <a href="https://github.com/Lipika2007-hait" target="_blank">
+                    github.com/Lipika2007-hait
+                </a>
+		</p>
+		
+		<p>
+				<strong>💼 Fiverr:</strong>
+                <a href="https://fiverr.com/lipika_hait" target="_blank">
+                    fiverr.com/lipika_hait
+                </a>
+		</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Lipika | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
